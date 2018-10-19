@@ -10,7 +10,9 @@
   text-shadow: 0 1px 1px rgb(0,0,0,0.3, green, blue);
   border-radius: 5px;
   text-align: center;
+  align-items: center;
   line-height: 150rpx;
+  
 }
 .content{
    height: 100%;
@@ -20,6 +22,7 @@
    box-sizing: border-box;
    padding-top: 10rpx;
 }
+
 .screen{
   background-color: #ffffff;
   text-align: right;
@@ -41,6 +44,7 @@
   color: #d9eef7;
   border: solid 1px #0076a3;
 }
+
 
 /*数字按钮按下状态*/
 .button-hover-num{

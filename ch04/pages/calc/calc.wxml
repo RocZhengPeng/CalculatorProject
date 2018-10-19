@@ -1,9 +1,14 @@
 <!--pages/calc/calc.wxml-->
 <view class='content'>
   <view class='screen'>{{result}}</view>
+
   <view class='btnGroup'>
-    <button class='item orange' hover-class='.other-button-hover' id='{{id1}}' bindtap='clickButton'>历史</button>
-    <button class='item orange' hover-class='.other-button-hover' id='{{id2}}' bindtap='clickButton'>C</button>
+  <switch checked='{{record}}' bindchange='RecordHistory'></switch>
+  <view class='histext'>保存历史记录</view>
+  </view>
+  <view class='btnGroup'>
+    <button class='item orange' hover-class='.other-button-hover' id='{{id1}}' bindtap='clickButton'><icon type='info_circle' size='38' color='red' class='btnIcon'/></button>
+    <button class='item orange' hover-class='.other-button-hover' id='{{id2}}' bindtap='clickButton'><icon type='cancel' size='38' color='red' class='btnIcon'/></button>
     <button class='item orange' hover-class='.other-button-hover'  id='{{id3}}' bindtap='clickButton'>→</button>
     <button class='item orange' hover-class='.other-button-hover'  id='{{id4}}' bindtap='clickButton'>÷</button>
   </view>
@@ -28,7 +33,7 @@
    <view class='btnGroup'>
     <button class='item orange' hover-class='.other-button-hover'  id='{{id17}}' bindtap='clickButton'>士</button>
     <button class='item blue'   hover-class='button-hover-num'  id='{{id18}}' bindtap='clickButton'>0</button>
-    <button class='item orange' hover-class='.other-button-hover'  id='{{id19}}' bindtap='clickButton'>./</button>
+    <button class='item orange' hover-class='.other-button-hover'  id='{{id19}}' bindtap='clickButton'>.</button>
     <button class='item orange' hover-class='.other-button-hover'  id='{{id20}}' bindtap='clickButton'>=</button>
   </view>
 </view>
