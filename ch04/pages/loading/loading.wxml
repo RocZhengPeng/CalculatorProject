@@ -1,0 +1,15 @@
+<!--pages/loading/loading.wxml-->
+<view>
+  <view>
+     <text class='page_title'>loading加载提示</text>
+  </view>
+
+  <view>
+     <view>
+        <view>
+           <loading hidden="{{hidden2}}">{{time}}秒后退出</loading>
+           <button type='default' bindtap='loadingTop2'>定时loading</button>
+        </view>
+     </view>
+  </view>
+</view>

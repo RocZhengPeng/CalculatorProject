@@ -1,0 +1,30 @@
+<!--pages/swiper/swiper.wxml-->
+<view class='page'>
+    <view class='page_hd'>
+          <text class='page_title'>swiper组件</text>
+    </view>
+
+    <view class='page_bd'>
+          <view class='section section_gap swiper'>
+                 <swiper indicator-dots='{{indicatiorDots}}' vertical='{{veritcal}}' autoplay='{{autoplay}}' interval='{{interval}}'
+                 duration='{{douration}}'>
+                 <block wx:key="{{item}}" wx:for="{{background}}">
+                      <swiper-item>
+                          <image src='{{item}}'></image>
+                      </swiper-item>
+                 </block>
+                 </swiper>
+          </view>
+    </view>
+
+    <view class='btn-area'>
+         <button type='default' bindtap='changeIndicatorDots'>指示点</button>
+         <button type='default' bindtap='changeVertical'>{{vertical?' 水平指示点' : '垂直指示点'}}</button>
+         <button type='default' bindtap='changeAutoplay'>自动播放</button>
+    </view>
+
+    <slider bindchange='durationChange' value='{{duration}}' show-value='true' min='500' max='2000'></slider>
+    <view class='section_title'>页面切换间隔</view>
+    <slider bindchange='intervalChange' value='{{interval}}' show-value='true' min='2000' max='10000'></slider>
+    <view class='section_title'>滑动动画时长</view>
+</view>

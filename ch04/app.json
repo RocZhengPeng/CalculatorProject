@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/loading/loading",
+    "pages/swiper/swiper",
     "pages/plan/plan",
     "pages/radio/radio",
     "pages/from/from",
