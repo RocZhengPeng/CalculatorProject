@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/plan/plan",
+    "pages/radio/radio",
+    "pages/from/from",
     "pages/calc/calc",
     "pages/index/index",
     "pages/logs/logs",
